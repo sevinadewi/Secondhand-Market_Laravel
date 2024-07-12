@@ -17,11 +17,12 @@
 
           <ul class="product-list">
 
+            @foreach($barang as $br)
             <li class="product-item">
               <div class="product-card" tabindex="0">
 
                 <figure class="card-banner">
-                  <img src="./assets/images/product-1.jpg" width="312" height="350" loading="lazy"
+                  <img src="{{url($br->picture)}}" width="312" height="350" loading="lazy"
                     alt="Running Sneaker Shoes" class="image-contain">
 
                   <div class="card-badge">New</div>
@@ -64,24 +65,25 @@
                 </figure>
 
                 <div class="card-content">
-
+{{-- 
                   <div class="card-cat">
                     <a href="#" class="card-cat-link">Men</a> /
                     <a href="#" class="card-cat-link">Women</a>
-                  </div>
+                  </div> --}}
 
                   <h3 class="h3 card-title">
-                    <a href="#">Running Sneaker Shoes</a>
+                    <a href="#">{{$br->nama}}</a>
                   </h3>
 
-                  <data class="card-price" value="180.85">$180.85</data>
+                  <data class="card-price" value="{{$br->harga}}">{{$br->harga}}</data>
 
                 </div>
 
               </div>
             </li>
+            @endforeach
 
-            <li class="product-item">
+            {{-- <li class="product-item">
               <div class="product-card" tabindex="0">
 
                 <figure class="card-banner">
@@ -519,7 +521,7 @@
                 </div>
 
               </div>
-            </li>
+            </li> --}}
 
           </ul>
 

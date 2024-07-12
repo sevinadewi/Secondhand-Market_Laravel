@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Barang;
 use Illuminate\Http\Request;
 
 class DashboardController extends Controller
@@ -20,7 +21,8 @@ class DashboardController extends Controller
         // return view('user.profile', [
         //     'user' => User::findOrFail($id)
         // ]);
-
-        return view('product');
+        $barang = Barang::get();
+        // dd($barang);
+        return view('product', ['barang' => $barang]);
     }
 }
