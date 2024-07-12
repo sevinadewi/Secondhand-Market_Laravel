@@ -196,7 +196,7 @@
               <div class="collection-card" style=" background-image: url('./assets/images2/pinkChair2.png'); ">
                 <h3 class="h4 card-title">Furniture</h3>
 
-                <a href="#" class="btn btn-secondary">
+                <a href="{{ route('furniture.get') }}" class="btn btn-secondary">
                   <span>Explore All</span>
 
                   <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
@@ -208,7 +208,7 @@
               <div class="collection-card" style="background-image: url('./assets/images2/whiteSweater.png')">
                 <h3 class="h4 card-title">Fashion</h3>
 
-                <a href="#" class="btn btn-secondary">
+                <a href="{{ route('fashion.get') }}" class="btn btn-secondary">
                   <span>Explore All</span>
 
                   <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
@@ -228,7 +228,45 @@
       <!-- 
         - #PRODUCT
       -->
+      <section class="section product">
+        <div class="container">
 
+          <h2 class="h2 section-title">Products</h2>
+
+          <ul class="product-list">
+
+            @foreach($barang as $br)
+            <li class="product-item">
+              <a href="{{route('detail', ['id' => $br->id])}}" class="product-card" tabindex="0">
+              <div class="product-card" tabindex="0">
+
+                <figure class="card-banner">
+                  <img src="{{url($br->picture)}}" width="312" height="350" loading="lazy"
+                    alt="Running Sneaker Shoes" class="image-contain">
+
+                </figure>
+
+                <div class="card-content">
+
+
+                  <h3 class="h3 card-title">
+                    <a href="{{route('detail', ['id' => $br->id])}}">{{$br->nama}}</a>
+                  </h3>
+
+                  <data class="card-price" value="{{$br->harga}}">{{$br->harga}}</data>
+
+                </div>
+
+              </div>
+            </li>
+            @endforeach
+
+           
+
+          </ul>
+
+        </div>
+      {{-- </section>
       <section class="section product">
         <div class="container">
 
@@ -772,7 +810,7 @@
           </ul>
 
         </div>
-      </section>
+      </section> --}}
 
 
 
@@ -1309,7 +1347,7 @@
         <div class="footer-brand">
 
           <a href="#" class="logo">
-            <img src="./assets/images/logo.svg" width="160" height="50" alt="Footcap logo">
+            <img src="./assets/images2/logo2.png" width="160" height="50" alt="">
           </a>
 
           <ul class="social-list">
@@ -1355,7 +1393,7 @@
                 <ion-icon name="location"></ion-icon>
 
                 <span class="footer-link-text">
-                  2751 S Parker Rd, Aurora, CO 80014, United States
+                  Bantul, Yogyakarta
                 </span>
               </address>
             </li>
@@ -1364,7 +1402,7 @@
               <a href="tel:+557343673257" class="footer-link">
                 <ion-icon name="call"></ion-icon>
 
-                <span class="footer-link-text">+557343673257</span>
+                <span class="footer-link-text">+08777777777</span>
               </a>
             </li>
 
@@ -1372,7 +1410,7 @@
               <a href="mailto:footcap@help.com" class="footer-link">
                 <ion-icon name="mail"></ion-icon>
 
-                <span class="footer-link-text">footcap@help.com</span>
+                <span class="footer-link-text">vintigo@help.com</span>
               </a>
             </li>
 

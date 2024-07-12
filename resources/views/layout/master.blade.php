@@ -159,7 +159,8 @@
         <div class="footer-brand">
 
           <a href="#" class="logo">
-            <img src="./assets/images/logo.svg" width="160" height="50" alt="Footcap logo">
+
+            <img src="./assets/images2/logo2.png" width="160" height="50" alt="">
           </a>
 
           <ul class="social-list">
@@ -205,7 +206,7 @@
                 <ion-icon name="location"></ion-icon>
 
                 <span class="footer-link-text">
-                  2751 S Parker Rd, Aurora, CO 80014, United States
+                  Bantul, Yogyakarta
                 </span>
               </address>
             </li>
@@ -214,7 +215,7 @@
               <a href="tel:+557343673257" class="footer-link">
                 <ion-icon name="call"></ion-icon>
 
-                <span class="footer-link-text">+557343673257</span>
+                <span class="footer-link-text">+08777777777</span>
               </a>
             </li>
 
@@ -222,7 +223,7 @@
               <a href="mailto:footcap@help.com" class="footer-link">
                 <ion-icon name="mail"></ion-icon>
 
-                <span class="footer-link-text">footcap@help.com</span>
+                <span class="footer-link-text">vintigo@help.com</span>
               </a>
             </li>
 

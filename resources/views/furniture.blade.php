@@ -11,7 +11,6 @@
 
             @foreach($barang as $br)
             <li class="product-item">
-              <a href="{{route('detail', ['id' => $br->id])}}" class="product-card" tabindex="0">
               <div class="product-card" tabindex="0">
 
                 <figure class="card-banner">
@@ -41,12 +40,6 @@
 
         </div>
       </section>
-
-      <!-- 
-        - #CTA
-      -->
-
-      
 
     </article>
 @endsection

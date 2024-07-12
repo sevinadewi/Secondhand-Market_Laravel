@@ -24,4 +24,22 @@ class GroupThingsController extends Controller
         $barang = Barang::where('kategori','homeware')->get();
         return view('homeware',['barang' => $barang]);
     }
+
+    public function furniture()
+    {
+        // return view('user.profile', [
+        //     'user' => User::findOrFail($id)
+        // ]);
+        $barang = Barang::where('kategori','furniture')->get();
+        return view('furniture',['barang' => $barang]);
+    }
+
+    public function fashion()
+    {
+        // return view('user.profile', [
+        //     'user' => User::findOrFail($id)
+        // ]);
+        $barang = Barang::where('kategori','fashion')->get();
+        return view('fashion',['barang' => $barang]);
+    }
 }

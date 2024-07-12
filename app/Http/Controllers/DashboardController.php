@@ -12,8 +12,8 @@ class DashboardController extends Controller
         // return view('user.profile', [
         //     'user' => User::findOrFail($id)
         // ]);
-
-        return view('landing');
+        $barang = Barang::get();
+        return view('landing', ['barang' => $barang]);
     }
 
     public function product()
