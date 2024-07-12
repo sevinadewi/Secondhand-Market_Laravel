@@ -19,7 +19,12 @@
                             <h2>{{$barang->harga}}</h2><br>
                             <p><strong>Detail</strong></p>
                             <p class="card-text">{{$barang->deskripsi}}</p>
-                            <button type="button" class="btn btn-primary" disabled>Buy</button>
+                            @auth
+                            <a href="{{route('buy',['id_barang' => $barang->id])}}" type="button" class="btn btn-primary" style="max-width: 100px">Buy</a>
+                            @endauth
+                            @guest
+                            <button type="button" class="btn btn-secondary" disabled>Buy</button>
+                            @endguest
                           <button type="button" class="btn btn-outline-primary" disabled>Cancel</button>
                           </div>
                         </div>

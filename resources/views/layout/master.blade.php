@@ -10,12 +10,12 @@
   <!-- 
     - favicon
   -->
-  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="shortcut icon" href="{{asset('favicon.svg')}}" type="image/svg+xml">
 
   <!-- 
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+  {{-- <link rel="stylesheet" href="./assets/css/style.css"> --}}
 
   <!-- 
     - google font link
@@ -25,13 +25,13 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
     rel="stylesheet">
-    {{-- <link href="{{ asset('bootstrap/css/bootstrap.min.css') }}" rel="stylesheet"> --}}
-    {{-- <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}"> --}}
+    <link href="{{ asset('bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
 
   <!-- 
     - preload banner
   -->
-  <link rel="preload" href="./assets/images/hero-banner.png" as="image">
+  <link rel="preload" href="{{asset('assets/images/hero-banner.png')}}" as="image">
 
 </head>
 
@@ -47,7 +47,7 @@
       <div class="overlay" data-overlay></div>
 
       <a href="#" class="logo">
-        <img src="./assets/images2/logo2.png" width="190" height="50" alt="">
+        <img src="{{asset('assets/images2/logo2.png')}}" width="190" height="50" alt="">
       </a>
 
       <button class="nav-open-btn" data-nav-open-btn aria-label="Open Menu">
@@ -61,7 +61,7 @@
         </button>
 
         <a href="#" class="logo">
-          <img src="./assets/images2/logo1.png" width="190" height="50" alt="">
+          <img src="{{asset('assets/images2/logo1.png')}}" width="190" height="50" alt="">
           
         </a>
 
@@ -101,11 +101,22 @@
           </li> --}}
 
           <li>
-            <a href="#" class="nav-action-btn">
-              <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
-
-              <span class="nav-action-text">Login / Register</span>
+            @guest
+            <a type="button" class="btn btn-primary rounded-pill" href="{{route('login')}}" class="">
+              Login
             </a>
+            @endguest
+            @auth
+              @if(Auth::user()->role == 'admin')
+                <a type="button" class="btn btn-primary rounded-pill" href="{{route('admin-dashboard')}}" class="">
+                  Dashboard
+                </a>
+              @else
+                <a type="button" class="btn btn-primary rounded-pill" href="{{route('logout')}}" class="">
+                  Logout
+                </a>
+              @endif
+            @endauth
           </li>
 
           {{-- <li>
@@ -160,7 +171,7 @@
 
           <a href="#" class="logo">
 
-            <img src="./assets/images2/logo2.png" width="160" height="50" alt="">
+            <img src="{{asset('assets/images2/logo2.png')}}" width="160" height="50" alt="">
           </a>
 
           <ul class="social-list">

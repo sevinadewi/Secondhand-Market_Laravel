@@ -102,11 +102,22 @@
           </li> --}}
 
           <li>
-            <a href="#" class="nav-action-btn">
-              <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
-
-              <span class="nav-action-text">Login / Register</span>
+            @guest
+            <a type="button" class="btn btn-primary rounded-pill" href="{{route('login')}}" class="">
+              Login
             </a>
+            @endguest
+            @auth
+              @if(Auth::user()->role == 'admin')
+                <a type="button" class="btn btn-primary rounded-pill" href="{{route('admin-dashboard')}}" class="">
+                  Dashboard
+                </a>
+              @else
+                <a type="button" class="btn btn-primary rounded-pill" href="{{route('logout')}}" class="">
+                  Logout
+                </a>
+              @endif
+            @endauth
           </li>
 
           {{-- <li>

@@ -29,16 +29,17 @@ Route::get('/register', [LoginController::class, 'register']);
 Route::get('/register', [LoginController::class, 'register'])->name('register.get');
 Route::post('/register', [LoginController::class, 'register_post'])->name('register.post');
 Route::get('/login', [LoginController::class, 'login'])->name('login');
-Route::get('/logout', [LoginController::class, 'logout']);
+Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
 Route::post('/login', [LoginController::class, 'authenticate'])->name('login.post');
 Route::get('/product', [GroupThingsController::class, 'product']);
 Route::get('/homeware', [GroupThingsController::class, 'homeware'])->name('homeware.get');
 Route::get('/fashion', [GroupThingsController::class, 'fashion'])->name('fashion.get');
 Route::get('/furniture', [GroupThingsController::class, 'furniture'])->name('furniture.get');
 Route::get('/detail/{id}', [DetailController::class, 'detail'])->name('detail');
+Route::get('/buy/{id_barang}', [GroupThingsController::class, 'buy'])->name('buy');
 
 Route::middleware(['auth', 'role:admin'])->group(function () {
-    Route::get('/admin-dashboard', '\App\Http\Controllers\Admin\AdminController@index');
+    Route::get('/admin-dashboard', '\App\Http\Controllers\Admin\AdminController@index')->name('admin-dashboard');
     Route::get('/admin-barang', [AdminController::class, 'barang'])->name('admin-barang');
     Route::get('/admin-barang/{id_barang}', [AdminController::class, 'deleteBarang']);
     Route::post('/admin-barang', [AdminController::class, 'createBarang']);

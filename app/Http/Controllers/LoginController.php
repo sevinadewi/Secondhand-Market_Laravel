@@ -25,7 +25,7 @@ class LoginController extends Controller
             'name' => $request->name,
             'email' => $request->email,
             'password' => bcrypt($request->password),
-            'role' => 'admin'
+            'role' => 'user'
         ];
 
         User::create($data);

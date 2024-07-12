@@ -51,7 +51,7 @@
                 <input name="password" type="password"  id="password" placeholder="Enter your password">
                 <br>
                 <button type="submit">Register</button>
-                <a href="login.html" class="switch">Already have an account? Sign In</a>
+                <a href="{{route('login')}}" class="switch">Already have an account? Sign In</a>
             </form>
         </div>
         <div class="image-container">

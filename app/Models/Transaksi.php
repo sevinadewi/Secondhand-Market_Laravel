@@ -11,5 +11,6 @@ class Transaksi extends Model
     protected $fillable = [
         'total',
         'tanggal',
+        'id_buyer',
     ];
 }
