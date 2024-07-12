@@ -421,7 +421,7 @@ body {
   font-weight: 400; 
 }
 
-.navbar .logo span { margin-inline: auto; }
+.navbar .logo img { margin-inline: auto; }
 
 .navbar-list,
 .nav-action-list { margin: 30px; }

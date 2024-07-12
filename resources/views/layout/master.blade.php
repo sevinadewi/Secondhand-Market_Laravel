@@ -15,7 +15,7 @@
   <!-- 
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+  {{-- <link rel="stylesheet" href="./assets/css/style.css"> --}}
 
   <!-- 
     - google font link
@@ -26,6 +26,7 @@
     href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
     rel="stylesheet">
     <link href="{{ asset('bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
 
   <!-- 
     - preload banner
@@ -46,7 +47,7 @@
       <div class="overlay" data-overlay></div>
 
       <a href="#" class="logo">
-        <img src="./assets/images/logo.svg" width="160" height="50" alt="Footcap logo">
+        <img src="./assets/images2/logo2.png" width="190" height="50" alt="">
       </a>
 
       <button class="nav-open-btn" data-nav-open-btn aria-label="Open Menu">
@@ -60,8 +61,8 @@
         </button>
 
         <a href="#" class="logo">
-          {{-- <img src="./assets/images/logo.svg" width="190" height="50" alt="Footcap logo"> --}}
-          <span>vintigo</span>
+          <img src="./assets/images2/logo1.png" width="190" height="50" alt="">
+          
         </a>
 
         <ul class="navbar-list">
