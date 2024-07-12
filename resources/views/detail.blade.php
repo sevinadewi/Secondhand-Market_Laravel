@@ -11,15 +11,14 @@
                   <div class="card mb-3" style="max-width: 800px; max-height:500px">
                       <div class="row g-0">
                         <div class="col-md-4">
-                          <img src="{{ asset('assets/images2/meja1.jpeg') }}" class="img-fluid rounded-start" alt="...">
+                          <img src="{{ url($barang->picture) }}" class="img-fluid rounded-start" alt="...">
                         </div>
                         <div class="col-md-8">
                           <div class="card-body">
-                            <h5 class="card-title">Meja Belajar - Kondisi Prima</h5>
-                            <h2>Rp150.000</h2><br>
+                            <h5 class="card-title">{{$barang->nama}}</h5>
+                            <h2>{{$barang->harga}}</h2><br>
                             <p><strong>Detail</strong></p>
-                            <p class="card-text">Kondisi: Bekas pakai, namun terawat dengan sangat baik. Tidak ada goresan besar atau kerusakan struktural. Semua laci berfungsi dengan baik.</p>
-                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                            <p class="card-text">{{$barang->deskripsi}}</p>
                             <button type="button" class="btn btn-primary" disabled>Buy</button>
                           <button type="button" class="btn btn-outline-primary" disabled>Cancel</button>
                           </div>

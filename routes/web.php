@@ -28,11 +28,11 @@ Route::get('/products', [DashboardController::class, 'product'])->name('products
 Route::get('/register', [LoginController::class, 'register']);
 Route::get('/register', [LoginController::class, 'register'])->name('register.get');
 Route::post('/register', [LoginController::class, 'register_post'])->name('register.post');
-Route::get('/login', [LoginController::class, 'login']);
+Route::get('/login', [LoginController::class, 'login'])->name('login');
 Route::get('/logout', [LoginController::class, 'logout']);
 Route::post('/login', [LoginController::class, 'authenticate'])->name('login.post');
 Route::get('/product', [GroupThingsController::class, 'product']);
-Route::get('/detail', [DetailController::class, 'detail']);
+Route::get('/detail/{id}', [DetailController::class, 'detail'])->name('detail');
 
 Route::middleware(['auth', 'role:admin'])->group(function () {
     Route::get('/admin-dashboard', '\App\Http\Controllers\Admin\AdminController@index');
