@@ -5,7 +5,7 @@
       <section class="section product">
         <div class="container">
 
-          <h2 class="h2 section-title">Bestsellers Products</h2>
+          <h2 class="h2 section-title">Products</h2>
 
           <ul class="product-list">
 
@@ -17,50 +17,13 @@
                   <img src="{{url($br->picture)}}" width="312" height="350" loading="lazy"
                     alt="Running Sneaker Shoes" class="image-contain">
 
-                  <div class="card-badge">New</div>
-
-                  <ul class="card-action-list">
-
-                    <li class="card-action-item">
-                      <button class="card-action-btn" aria-labelledby="card-label-1">
-                        <ion-icon name="cart-outline"></ion-icon>
-                      </button>
-
-                      <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
-                    </li>
-
-                    <li class="card-action-item">
-                      <button class="card-action-btn" aria-labelledby="card-label-2">
-                        <ion-icon name="heart-outline"></ion-icon>
-                      </button>
-
-                      <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
-                    </li>
-
-                    <li class="card-action-item">
-                      <button class="card-action-btn" aria-labelledby="card-label-3">
-                        <ion-icon name="eye-outline"></ion-icon>
-                      </button>
-
-                      <div class="card-action-tooltip" id="card-label-3">Quick View</div>
-                    </li>
-
-                    <li class="card-action-item">
-                      <button class="card-action-btn" aria-labelledby="card-label-4">
-                        <ion-icon name="repeat-outline"></ion-icon>
-                      </button>
-
-                      <div class="card-action-tooltip" id="card-label-4">Compare</div>
-                    </li>
-
-                  </ul>
                 </figure>
 
                 <div class="card-content">
 
 
                   <h3 class="h3 card-title">
-                    <a href="#">{{$br->nama}}</a>
+                    <a href="{{route('detail', ['id' => $br->id])}}">{{$br->nama}}</a>
                   </h3>
 
                   <data class="card-price" value="{{$br->harga}}">{{$br->harga}}</data>
@@ -78,6 +41,9 @@
         </div>
       </section>
 
+      <!-- 
+        - #CTA
+      -->
 
       <section class="section cta">
         <div class="container">

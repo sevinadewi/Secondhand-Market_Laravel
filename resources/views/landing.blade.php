@@ -77,29 +77,29 @@
             <a href="{{route('products.index')}}" class="navbar-link">Products</a>
           </li>
 
-          <li class="navbar-item">
+          {{-- <li class="navbar-item">
             <a href="#" class="navbar-link">Shop</a>
-          </li>
+          </li> --}}
 
           <li class="navbar-item">
-            <a href="#" class="navbar-link">Blog</a>
+            <a href="#" class="navbar-link">Order</a>
           </li>
 
-          <li class="navbar-item">
+          {{-- <li class="navbar-item">
             <a href="#" class="navbar-link">Contact</a>
-          </li>
+          </li> --}}
 
         </ul>
 
         <ul class="nav-action-list">
 
-          <li>
+          {{-- <li>
             <button class="nav-action-btn">
               <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
 
               <span class="nav-action-text">Search</span>
             </button>
-          </li>
+          </li> --}}
 
           <li>
             <a href="#" class="nav-action-btn">
@@ -109,7 +109,7 @@
             </a>
           </li>
 
-          <li>
+          {{-- <li>
             <button class="nav-action-btn">
               <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
 
@@ -117,9 +117,9 @@
 
               <data class="nav-action-badge" value="5" aria-hidden="true">5</data>
             </button>
-          </li>
+          </li> --}}
 
-          <li>
+          {{-- <li>
             <button class="nav-action-btn">
               <ion-icon name="bag-outline" aria-hidden="true"></ion-icon>
 
@@ -127,7 +127,7 @@
 
               <data class="nav-action-badge" value="4" aria-hidden="true">4</data>
             </button>
-          </li>
+          </li> --}}
 
         </ul>
 
@@ -184,7 +184,7 @@
               <div class="collection-card" style="background-image: url('./assets/images2/homeware.png')">
                 <h3 class="h4 card-title">Homeware</h3>
 
-                <a href="#" class="btn btn-secondary">
+                <a href="{{ route('homeware.get') }}" class="btn btn-secondary">
                   <span>Explore All</span>
 
                   <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
@@ -263,6 +263,7 @@
           </ul>
 
           <ul class="product-list">
+            
 
             <li class="product-item">
               <div class="product-card" tabindex="0">
@@ -780,7 +781,7 @@
       <!-- 
         - #CTA
       -->
-
+{{-- 
       <section class="section cta">
         <div class="container">
 
@@ -817,7 +818,7 @@
           </ul>
 
         </div>
-      </section>
+      </section> --}}
 
 
 
@@ -827,7 +828,7 @@
         - #SPECIAL
       -->
 
-      <section class="section special">
+      {{-- <section class="section special">
         <div class="container">
 
           <div class="special-banner" style="background-image: url('./assets/images/special-banner.jpg')">
@@ -1110,7 +1111,7 @@
 
         </div>
       </section>
-
+ --}}
 
 
 
@@ -1119,7 +1120,7 @@
         - #SERVICE
       -->
 
-      <section class="section service">
+      {{-- <section class="section service">
         <div class="container">
 
           <ul class="service-list">
@@ -1199,7 +1200,7 @@
           </ul>
 
         </div>
-      </section>
+      </section> --}}
 
 
 
@@ -1209,7 +1210,7 @@
         - #INSTA POST
       -->
 
-      <section class="section insta-post">
+      {{-- <section class="section insta-post">
 
         <ul class="insta-post-list has-scrollbar">
 
@@ -1287,7 +1288,7 @@
 
         </ul>
 
-      </section>
+      </section> --}}
 
     </article>
   </main>
@@ -1425,63 +1426,7 @@
 
           </ul>
 
-          <div class="footer-list">
-
-            <p class="footer-list-title">Opening Time</p>
-
-            <table class="footer-table">
-              <tbody>
-
-                <tr class="table-row">
-                  <th class="table-head" scope="row">Mon - Tue:</th>
-
-                  <td class="table-data">8AM - 10PM</td>
-                </tr>
-
-                <tr class="table-row">
-                  <th class="table-head" scope="row">Wed:</th>
-
-                  <td class="table-data">8AM - 7PM</td>
-                </tr>
-
-                <tr class="table-row">
-                  <th class="table-head" scope="row">Fri:</th>
-
-                  <td class="table-data">7AM - 12PM</td>
-                </tr>
-
-                <tr class="table-row">
-                  <th class="table-head" scope="row">Sat:</th>
-
-                  <td class="table-data">9AM - 8PM</td>
-                </tr>
-
-                <tr class="table-row">
-                  <th class="table-head" scope="row">Sun:</th>
-
-                  <td class="table-data">Closed</td>
-                </tr>
-
-              </tbody>
-            </table>
-
-          </div>
-
-          <div class="footer-list">
-
-            <p class="footer-list-title">Newsletter</p>
-
-            <p class="newsletter-text">
-              Authoritatively morph 24/7 potentialities with error-free partnerships.
-            </p>
-
-            <form action="" class="newsletter-form">
-              <input type="email" name="email" required placeholder="Email Address" class="newsletter-input">
-
-              <button type="submit" class="btn btn-primary">Subscribe</button>
-            </form>
-
-          </div>
+          
 
         </div>
 
@@ -1492,7 +1437,7 @@
       <div class="container">
 
         <p class="copyright">
-          &copy; 2022 <a href="#" class="copyright-link">codewithsadee</a>. All Rights Reserved
+          &copy; 2024 <a href="#" class="copyright-link">Fara & Selvie</a>. All Rights Reserved
         </p>
 
       </div>

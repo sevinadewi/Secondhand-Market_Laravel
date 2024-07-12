@@ -62,7 +62,7 @@
           <li><a class="dropdown-item" href="/">Home</a></li>
           <li><hr class="dropdown-divider"></li>
           <li>
-            <form action="/logout" method="post">
+            <form action="/logout" method="get">
               @csrf
               <button type="submit" class="dropdown-item"><i class="bi-box-arrow-right"></i>Logout</button>
             </form>

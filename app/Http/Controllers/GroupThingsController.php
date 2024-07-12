@@ -14,4 +14,13 @@ class GroupThingsController extends Controller
 
         return view('product');
     }
+
+    public function homeware()
+    {
+        // return view('user.profile', [
+        //     'user' => User::findOrFail($id)
+        // ]);
+
+        return view('homeware');
+    }
 }

@@ -15,7 +15,7 @@
   <!-- 
     - custom css link
   -->
-  {{-- <link rel="stylesheet" href="./assets/css/style.css"> --}}
+  <link rel="stylesheet" href="./assets/css/style.css">
 
   <!-- 
     - google font link
@@ -25,8 +25,8 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
     rel="stylesheet">
-    <link href="{{ asset('bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+    {{-- <link href="{{ asset('bootstrap/css/bootstrap.min.css') }}" rel="stylesheet"> --}}
+    {{-- <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}"> --}}
 
   <!-- 
     - preload banner
@@ -83,9 +83,6 @@
             <a href="#" class="navbar-link">Shop</a>
           </li>
 
-          <li class="navbar-item">
-            <a href="#" class="navbar-link">Blog</a>
-          </li>
 
           <li class="navbar-item">
             <a href="#" class="navbar-link">Contact</a>
@@ -95,13 +92,13 @@
 
         <ul class="nav-action-list">
 
-          <li>
+          {{-- <li>
             <button class="nav-action-btn">
               <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
 
               <span class="nav-action-text">Search</span>
             </button>
-          </li>
+          </li> --}}
 
           <li>
             <a href="#" class="nav-action-btn">
@@ -111,17 +108,17 @@
             </a>
           </li>
 
-          <li>
+          {{-- <li>
             <button class="nav-action-btn">
               <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
 
-              <span class="nav-action-text">Wishlist</span>
+              <span class="nav-action-text">Wishlis</span>
 
               <data class="nav-action-badge" value="5" aria-hidden="true">5</data>
             </button>
-          </li>
+          </li> --}}
 
-          <li>
+          {{-- <li>
             <button class="nav-action-btn">
               <ion-icon name="bag-outline" aria-hidden="true"></ion-icon>
 
@@ -129,7 +126,7 @@
 
               <data class="nav-action-badge" value="4" aria-hidden="true">4</data>
             </button>
-          </li>
+          </li> --}}
 
         </ul>
 
@@ -288,7 +285,8 @@
       <div class="container">
 
         <p class="copyright">
-          &copy; 2022 <a href="#" class="copyright-link">codewithsadee</a>. All Rights Reserved
+          &copy; 2024
+           <a href="#" class="copyright-link">Fara & Selvie</a>. All Rights Reserved
         </p>
 
       </div>
