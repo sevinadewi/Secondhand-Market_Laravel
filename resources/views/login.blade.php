@@ -38,8 +38,8 @@
                 @csrf
                 <h1>Sign in</h1>
                <br>
-                <input type="email" placeholder="Email" />
-                <input type="password" placeholder="Password" />
+                <input name="email" type="email" placeholder="Email" />
+                <input name="password" type="password" placeholder="Password" />
               <br>
                 <button>Sign In</button>
                 <a href="{{ route('register.get') }}" class="switch">Don't have an account? Sign Up</a>
