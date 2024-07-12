@@ -59,7 +59,8 @@
         </button>
 
         <a href="#" class="logo">
-          <img src="./assets/images/logo.svg" width="190" height="50" alt="Footcap logo">
+          {{-- <img src="./assets/images/logo.svg" width="190" height="50" alt="Footcap logo"> --}}
+          Vintigo
         </a>
 
         <ul class="navbar-list">
@@ -154,16 +155,14 @@
           </h2>
 
           <p class="hero-text">
-            Competently expedite alternative benefits whereas leading-edge catalysts for change. Globally leverage
-            existing an
-            expanded array of leadership.
+            Belanja Cerdas, Pilih Barang Bekas Berkualitas
           </p>
 
-          <button class="btn btn-primary">
+          {{-- <button class="btn btn-primary">
             <span>Shop Now</span>
 
             <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-          </button>
+          </button> --}}
 
         </div>
       </section>
@@ -182,7 +181,7 @@
           <ul class="collection-list has-scrollbar">
 
             <li>
-              <div class="collection-card" style="background-image: url('./assets/images/collection-1.jpg')">
+              <div class="collection-card" style="background-image: url('./assets/images2/homeware.png')">
                 <h3 class="h4 card-title">Homeware</h3>
 
                 <a href="#" class="btn btn-secondary">

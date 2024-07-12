@@ -25,6 +25,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
     rel="stylesheet">
+    <link href="{{ asset('bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
 
   <!-- 
     - preload banner
@@ -59,7 +60,8 @@
         </button>
 
         <a href="#" class="logo">
-          <img src="./assets/images/logo.svg" width="190" height="50" alt="Footcap logo">
+          {{-- <img src="./assets/images/logo.svg" width="190" height="50" alt="Footcap logo"> --}}
+          <span>vintigo</span>
         </a>
 
         <ul class="navbar-list">

@@ -1,25 +1,9 @@
-/*-----------------------------------*\
- * #style.css
-\*-----------------------------------*/
 
-/**
- * copyright 2022 codewithsadee
- */
-
-
-
-
-
-/*-----------------------------------*\
- * #CUSTOM PROPERTY
-\*-----------------------------------*/
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&display=swap');
 :root {
 
-  /**
-   * colors
-   */
-
+ 
   --maximum-blue-green_10: hsla(185, 75%, 45%, 0.1);
   --rich-black-fogra-29: hsl(217, 28%, 9%);
   --gray-x-11-gray: hsl(0, 0%, 74%);
@@ -34,12 +18,10 @@
   --black: hsl(0, 0%, 0%);
   --onyx: hsl(0, 0%, 27%);
 
-  /**
-   * typography
-   */
-  
+ 
   --ff-roboto: 'Roboto', sans-serif;
   --ff-josefin-sans: 'Josefin Sans', sans-serif;
+  --ff-poppins: 'Poppins', sans-serif;
 
   --fs-1: 3rem;
   --fs-2: 2.6rem;
@@ -117,7 +99,7 @@ address {
 }
 
 html {
-  font-family: var(--ff-josefin-sans);
+  font-family: var(--ff-poppins);
   font-size: 10px;
   scroll-behavior: smooth;
 }
@@ -435,9 +417,11 @@ body {
 .navbar .logo {
   background: var(--maximum-blue-green_10);
   padding-block: 50px 40px;
+  font-family: var(--ff-playwrite-hu);
+  font-weight: 400; 
 }
 
-.navbar .logo img { margin-inline: auto; }
+.navbar .logo span { margin-inline: auto; }
 
 .navbar-list,
 .nav-action-list { margin: 30px; }

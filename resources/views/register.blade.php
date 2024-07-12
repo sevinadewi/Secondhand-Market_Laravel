@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login</title>
     <link href="{{ asset('bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('assets/css/login.css') }}">
 </head>
 <body>
-    <div class="container">
+    {{-- <div class="container">
         <h1 class="text-center">Halo, Bootstrap di Laravel!</h1>
         <button type="button" class="btn btn-warning">Klik Saya!</button>
     </div>
@@ -37,6 +38,24 @@
                     <button type="submit" class="btn btn-primary btn-block">Register</button>
                 </form>
             </div>
+        </div>
+    </div> --}}
+    <div class="container">
+        <div class="form-container sign-up-container">
+            <form method="POST" action="{{route('register.post')}}">
+                @csrf
+                <h1>Create Account</h1>
+                <br>
+                <input name="name" type="text" id="name" placeholder="Enter your name">
+                <input name="email" type="email"id="email" placeholder="Enter your email">
+                <input name="password" type="password"  id="password" placeholder="Enter your password">
+                <br>
+                <button type="submit">Register</button>
+                <a href="login.html" class="switch">Already have an account? Sign In</a>
+            </form>
+        </div>
+        <div class="image-container">
+            {{-- <img src="path-to-your-image.jpg" alt="Image Description"> --}}
         </div>
     </div>
 
